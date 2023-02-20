@@ -1,0 +1,188 @@
+html{
+    background-image: url(../website/resize.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    height: 100%;
+    width: 100%;
+}
+body{
+    /*background: #fffff8;*/
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    flex-direction: column;
+    justify-content: space-evenly;
+   }
+    
+
+#app{
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    /* grid-template-columns:  */
+    height:100vh;
+    /*background: #f23557;*/
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #f0d43a;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.holder{
+    margin: 1rem;
+}
+
+.entry{
+    background: rgba(59, 74, 107, .4);
+}
+.add{
+    grid-area: 6 / 3 / 7 / 4;
+}
+#entryHolder{
+align-items: center;
+display: flex;
+font-size: 2rem;
+justify-content: space-evenly;
+padding: auto;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+#date{
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-around;
+    padding: 0 2rem;
+    margin: 1rem;
+}
+
+
+#temp{
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-around;
+    padding: 0 2rem;
+    margin: 1rem;
+}
+
+#content{
+display: flex;
+justify-content: flex-start;
+flex: 4;
+margin: 1rem;
+}
+
+.headline {
+    font-family:  'Edu QLD Beginner', cursive;
+    font-size: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+.title{
+font-size: 1rem;
+font-weight: bold;
+margin: 1rem;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background:#22b2da;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+.button {
+    border-radius: 4px;
+    background-color: #077B88;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   align-items: center;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:#22b2da;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    display: inline;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+
+#generate:hover{
+    background-color: rgb(227, 227, 27);
+    color: rgb(107, 137, 245);
+}
+
+
